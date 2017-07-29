@@ -5,16 +5,10 @@ import com.rationalworks.pdfcharts.data.PCData;
 
 /* https://vega.github.io/vega/docs/scales/#domain */
 public class PCDomain {
-	private PCData data;
+	private String data;
 	private String field;
 	private PCSort sort;
 	
-	public PCData getData() {
-		return data;
-	}
-	public void setData(PCData data) {
-		this.data = data;
-	}
 	public String getField() {
 		return field;
 	}
@@ -26,5 +20,15 @@ public class PCDomain {
 	}
 	public void setSort(PCSort sort) {
 		this.sort = sort;
+	}
+	public String getData() {
+		return data;
+	}
+	public void setData(String data) {
+		this.data = data;
+	}
+	@Override
+	public String toString() {
+		return "PCDomain [data=" + data + ", field=" + field + ", sort=" + sort + "]";
 	}
 }

@@ -14,11 +14,11 @@ public class PCDataParser {
 		PCData pcData = new PCData();
 		if (node.isArray()) {
 		    for (final JsonNode objNode : node) {
-		        PCDataRowParser drp = new PCDataRowParser();
-		        PCDataRow newRow = drp.getPCDataRow(objNode);
+		        PCDataRow newRow = PCDataRowParser.getPCDataRow(objNode);
 		        pcData.addData(newRow);
 		    }
 		}
+		log.info("Parsed complete data field");
 		return pcData;
 		
 	}
