@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.rationalworks.pdfcharts</groupId>
 	<artifactId>pdf-charts</artifactId>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>pdf-charts</name>
 	<url>http://maven.apache.org</url>
@@ -33,4 +33,8 @@
 			<version>1.8</version>
 		</dependency>
 	</dependencies>
+	<modules>
+		<module>pdf-maker</module>
+		<module>pdf-vega-charts</module>
+	</modules>
 </project>
