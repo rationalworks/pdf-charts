@@ -2,3 +2,11 @@
 /.settings
 /target
 /.project
+/pdf-maker/.settings
+/pdf-maker/.classpath
+/pdf-maker/.gitignore
+/pdf-maker/.project
+/pdf-vega-charts/.gitignore
+/pdf-vega-charts/.project
+/pdf-vega-charts/.settings
+/pdf-vega-charts/.classpath
