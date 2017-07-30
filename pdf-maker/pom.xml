@@ -5,6 +5,15 @@
     <artifactId>pdf-charts</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.rationalworks.pdfmaker</groupId>
+  <groupId>com.rationalworks.pdfcharts.pdfmaker</groupId>
   <artifactId>pdf-maker</artifactId>
+   <packaging>jar</packaging>
+  
+  <dependencies>
+  	<dependency>
+			<groupId>com.rationalworks.pdfcharts.vega</groupId>
+			<artifactId>pdf-vega-charts</artifactId>
+			<version>1.0-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

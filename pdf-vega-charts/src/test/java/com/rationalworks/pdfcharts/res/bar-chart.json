@@ -2,9 +2,9 @@
   "$schema": "https://vega.github.io/schema/vega/v3.0.json",
   "width": 400,
   "height": 200,
-  "xposition": 400,
-  "yposition": 200,
-  "padding": 5,
+  "xposition": 20,
+  "yposition": 400,
+  "padding": 20,
 
   "data": [
     {
@@ -52,7 +52,9 @@
 
   "axes": [
     { "orient": "bottom", "scale": "xscale" },
-    { "orient": "left", "scale": "yscale" }
+    { "orient": "left", "scale": "yscale" },
+	{ "orient": "top", "scale": "yscale" },
+	{ "orient": "right", "scale": "yscale" }
   ],
 
   "marks": [

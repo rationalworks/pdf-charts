@@ -1,9 +1,11 @@
 package com.rationalworks.pdfcharts.axes;
 
+import com.rationalworks.pdfcharts.config.scale.PCAxisOrientation;
+
 /* https://vega.github.io/vega/docs/axes/ */
 public class PCAxis {
 	private String scale;
-	private String orient;
+	private PCAxisOrientation orient;
 	private boolean domain;
 	private String format;
 	private boolean grid;
@@ -27,10 +29,10 @@ public class PCAxis {
 	public void setScale(String scale) {
 		this.scale = scale;
 	}
-	public String getOrient() {
+	public PCAxisOrientation getOrient() {
 		return orient;
 	}
-	public void setOrient(String orient) {
+	public void setOrient(PCAxisOrientation orient) {
 		this.orient = orient;
 	}
 	public boolean isDomain() {

@@ -8,6 +8,7 @@ import org.apache.commons.logging.LogFactory;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.rationalworks.pdfcharts.axes.PCAxis;
+import com.rationalworks.pdfcharts.config.scale.PCAxisOrientation;
 
 public class PCAxesParser {
 	private static Log log = LogFactory.getLog(PCAxesParser.class);
@@ -18,7 +19,7 @@ public class PCAxesParser {
 		if (node.isArray()) {
 		    for (final JsonNode objNode : node) {
 		    	PCAxis axis = new PCAxis();
-		    	axis.setOrient(objNode.path("orient").asText());
+		    	axis.setOrient(PCAxisOrientation.mapPCAxisOrientation(objNode.path("orient").asText()));
 		    	axis.setScale(objNode.path("scale").asText());
 		        axiss.add(axis);
 		        log.info("Loaded axis with scale " + axis.getScale());

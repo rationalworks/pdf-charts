@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.rationalworks.factory.PCScaleTypeFactory;
 import com.rationalworks.pdfcharts.config.scale.PCDomain;
 import com.rationalworks.pdfcharts.config.scale.PCScale;
+import com.rationalworks.pdfcharts.config.scale.PCScaleRange;
 
 public class PCScaleParser {
 
@@ -26,6 +27,8 @@ private static Log log = LogFactory.getLog(PCDataParser.class);
 		    	scale.setRound(objNode.path("round").asBoolean());
 		    	scale.setPadding(objNode.path("padding").asDouble());
 		    	scale.setNice(objNode.path("nice").asBoolean());
+		    	scale.setPadding(objNode.path("padding").asDouble());
+		    	scale.setRange(PCScaleRange.mapPCScaleRange(objNode.path("range").asText()));
 		    	PCDomain domain = PCDomainParser.getDomain(objNode.path("domain"));
 		    	scale.setDomain(domain);
 		    	scales.add(scale);

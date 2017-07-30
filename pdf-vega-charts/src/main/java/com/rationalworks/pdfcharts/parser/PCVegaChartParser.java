@@ -22,7 +22,7 @@ public class PCVegaChartParser {
 		chart.setHeight((float)node.path("height").asDouble());
 		chart.setXposition((float)node.path("xposition").asDouble());
 		chart.setYposition((float)node.path("yposition").asDouble());
-		chart.setPadding((float)node.path("yposition").asDouble());
+		chart.setPadding((float)node.path("padding").asDouble());
 		
 		PCData data = PCDataParser.getPCData(node.path("data"));
 		chart.setData(data);

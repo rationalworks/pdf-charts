@@ -34,7 +34,7 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>pdf-maker</module>
 		<module>pdf-vega-charts</module>
+		<module>pdf-maker</module>
 	</modules>
 </project>

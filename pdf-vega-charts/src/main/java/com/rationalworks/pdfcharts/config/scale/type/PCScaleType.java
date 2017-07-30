@@ -1,5 +1,15 @@
 package com.rationalworks.pdfcharts.config.scale.type;
 
-public class PCScaleType {
+import com.rationalworks.pdfcharts.config.scale.PCScaleRange;
 
+public class PCScaleType {
+	private PCScaleRange range;
+
+	public PCScaleRange getRange() {
+		return range;
+	}
+
+	public void setRange(PCScaleRange range) {
+		this.range = range;
+	}
 }
